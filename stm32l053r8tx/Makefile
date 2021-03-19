@@ -1,6 +1,6 @@
 CC=arm-none-eabi-gcc
 CFLAGS= -c -mcpu=cortex-m0plus -mthumb -std=gnu11 -O0 -Wall 
-LDFLAGS= -T stm32l053xx.ld -nostdlib -Wl,-Map=final.map
+LDFLAGS= -T stm32l053r8tx.ld -nostdlib -Wl,-Map=final.map
 
 all:start.o final.elf
 

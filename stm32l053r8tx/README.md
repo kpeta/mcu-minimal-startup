@@ -1,4 +1,4 @@
-# STM32L053xx minimal blinky
+# STM32L053R8Tx minimal blinky
 
 Minimal code needed to blink green LED (PA5) on STM32L053 Nucleo board.
 Only stack pointer and reset handler are implemented in the vector table for this minimal example.

@@ -1,13 +1,13 @@
 CC=arm-none-eabi-gcc
 CFLAGS= -c -mcpu=cortex-m4 -mthumb -std=gnu11 -O0 -Wall
-LDFLAGS= -T stm32f407xx.ld -nostdlib -Wl,-Map=final.map
+LDFLAGS= -T stm32f407vgtx.ld -nostdlib -Wl,-Map=final.map
 
-all:startup_stm32f407xx.o final.elf
+all:startup_stm32f407vgtx.o final.elf
 
-startup_stm32f407xx.o:startup_stm32f407xx.c
+startup_stm32f407vgtx.o:startup_stm32f407vgtx.c
 	$(CC) $(CFLAGS) $^ -o $@
 
-final.elf:startup_stm32f407xx.o
+final.elf:startup_stm32f407vgtx.o
 	$(CC) $(LDFLAGS) $^ -o $@
 
 clean:
